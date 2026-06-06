@@ -40,3 +40,15 @@
 .info-box:nth-of-type(2n) {
   background-color: var(--color-infobox-2-bg);
 }
+#hvidløg:hover,
+#ingefær:hover,
+#agurk:hover,
+#tomat:hover,
+#kartoffel:hover,
+#gulerod:hover,
+#oje:hover,
+#nase:hover,
+#mund:hover,
+button {
+  cursor: pointer;
+}
