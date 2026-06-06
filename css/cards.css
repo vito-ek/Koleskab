@@ -25,6 +25,7 @@
 .daily_text .cta_btn {
   justify-self: left;
   width: 80%;
+  height: fit-content;
 }
 .daily_img {
   width: 100%;
@@ -90,4 +91,42 @@
 .cta_btn:after {
   content: "\2192";
   margin-left: 1rem;
+}
+
+[popover] {
+  padding: 1rem;
+
+  max-height: 90vh;
+  max-width: 90vw;
+  width: 50ch;
+}
+
+[popover] button {
+  position: sticky;
+  top: 0;
+  justify-self: end;
+}
+
+:popover-open {
+  display: grid;
+}
+
+::backdrop {
+  background: #0001;
+}
+
+[popover] {
+  opacity: 0;
+  transition: 0.2s;
+}
+
+:popover-open {
+  opacity: 1;
+  scale: none;
+}
+
+@starting-style {
+  :popover-open {
+    opacity: 0;
+  }
 }
